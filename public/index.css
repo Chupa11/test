@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: "Concert One", sans-serif;
+}
+
+
+body{
+    background:#ff2f2f;
+    background-repeat:no-repeat;
+    height:100%;
+    background-attachment: fixed;
+}
+
+
+#leftPic, #rightPic{
+    transition-duration:1s;
+    width:30dvw;
+    height:50dvh;
+    object-fit:cover;
+    transition-duration:1s;
+    border:none;
+    border-radius:15px;    
+}
+
+#leftPic:hover{
+    transform: rotate(-10deg);
+    width:35dvw;
+    height:55dvh;
+    cursor:pointer;
+}
+#rightPic:hover{
+    transform: rotate(10deg);
+    width:35dvw;
+    height:55dvh;
+    cursor:pointer;
+}
+
+#options{
+    display:flex;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    justify-content:space-evenly;
+    width:100vw;
+}
+@media screen and (max-width:600px){
+    #options{
+        flex-direction:column;
+        height:80vh;
+        left:50%;
+        align-items:center;
+        text-align: center;
+    }
+    #leftPic, #rightPic{
+        width:280px;
+        height:280px;
+    }
+    #leftPic:hover, #rightPic:hover{
+        width:310px;
+        height:310px;
+    }
+
+}
+
+#lemonEmoji{
+    position:absolute;
+    left:50%;
+    top:3%;
+    transform:translateX(-50%);
+    font-family: "Concert One", sans-serif;
+    font-size:70px;
+
+}
+#winner{
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform:translate(50%,-50%);
+    transition-duration:1s;
+    width:50dvw;
+    height:70dvh;
+    object-fit:cover;
+    transition-duration:1s;
+    border:none;
+    border-radius:15px;    
+}
+@media screen and (max-width:600px){
+    #winner{
+        width:80dvw;
+        height:100dvw;
+    }
+}
